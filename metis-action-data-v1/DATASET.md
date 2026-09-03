@@ -3,7 +3,7 @@
 Part 4 dataset package for the Dedicated Metis Action Model System.
 
 ## Files
-- `train.jsonl` — 30,000 semantic-action training examples
+- `train.jsonl` — 29,933 semantic-action training examples
 - `validation.jsonl` — 3,000 semantic-action validation examples
 - `test.jsonl` — 4,000 held-out semantic-action examples
 - `adversarial.jsonl` — 1,000 hard examples (600 valid actions + 400 safe-failure cases)
