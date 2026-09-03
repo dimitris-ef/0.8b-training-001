@@ -1,30 +1,79 @@
 VALIDATOR
 =========
-DATASET VALID
-adversarial.jsonl            emit_action  600
-adversarial.jsonl            safe_failure 400
-golden_eval.jsonl            ACTION       50
-golden_eval.jsonl            CHAT         50
-golden_eval.jsonl            emit_action  300
-golden_eval.jsonl            safe_failure 100
-router-test.jsonl            ACTION       1500
-router-test.jsonl            CHAT         1500
-router-train.jsonl           ACTION       10000
-router-train.jsonl           CHAT         10000
-router-validation.jsonl      ACTION       1000
-router-validation.jsonl      CHAT         1000
-test.jsonl                   emit_action  4000
-train.jsonl                  emit_action  30000
-validation.jsonl             emit_action  3000
-unique ids: 63500
-unique semantic_action inputs: 38400
-unique router inputs: 25100
+DATASET INVALID
+- validation.jsonl:63: duplicate input with train.jsonl:19144
+- validation.jsonl:65: duplicate input with train.jsonl:22644
+- validation.jsonl:69: duplicate input with train.jsonl:2771
+- validation.jsonl:73: duplicate input with train.jsonl:2946
+- validation.jsonl:145: duplicate input with train.jsonl:4298
+- validation.jsonl:184: duplicate input with train.jsonl:2577
+- validation.jsonl:213: duplicate input with train.jsonl:26365
+- validation.jsonl:221: duplicate input with train.jsonl:1246
+- validation.jsonl:236: duplicate input with train.jsonl:6444
+- validation.jsonl:326: duplicate input with train.jsonl:27086
+- validation.jsonl:442: duplicate input with train.jsonl:11241
+- validation.jsonl:449: duplicate input with train.jsonl:27907
+- validation.jsonl:484: duplicate input with train.jsonl:4848
+- validation.jsonl:488: duplicate input with train.jsonl:15679
+- validation.jsonl:646: duplicate input with train.jsonl:21548
+- validation.jsonl:734: duplicate input with train.jsonl:23591
+- validation.jsonl:767: duplicate input with train.jsonl:16662
+- validation.jsonl:793: duplicate input with train.jsonl:20656
+- validation.jsonl:999: duplicate input with train.jsonl:8791
+- validation.jsonl:1095: duplicate input with train.jsonl:19371
+- validation.jsonl:1255: duplicate input with train.jsonl:15998
+- validation.jsonl:1277: duplicate input with train.jsonl:15082
+- validation.jsonl:1302: duplicate input with train.jsonl:4020
+- validation.jsonl:1303: duplicate input with train.jsonl:27957
+- validation.jsonl:1479: duplicate input with train.jsonl:19745
+- validation.jsonl:1504: duplicate input with train.jsonl:10178
+- validation.jsonl:1750: duplicate input with train.jsonl:24644
+- validation.jsonl:1823: duplicate input with train.jsonl:3254
+- validation.jsonl:1995: duplicate input with train.jsonl:7390
+- validation.jsonl:2011: duplicate input with train.jsonl:6813
+- validation.jsonl:2020: duplicate input with train.jsonl:15126
+- validation.jsonl:2023: duplicate input with train.jsonl:2029
+- validation.jsonl:2109: duplicate input with train.jsonl:22086
+- validation.jsonl:2114: duplicate input with train.jsonl:25666
+- validation.jsonl:2130: duplicate input with train.jsonl:22744
+- validation.jsonl:2198: duplicate input with train.jsonl:14161
+- validation.jsonl:2223: duplicate input with train.jsonl:5988
+- validation.jsonl:2427: duplicate input with train.jsonl:216
+- validation.jsonl:2428: duplicate input with train.jsonl:7254
+- validation.jsonl:2459: duplicate input with train.jsonl:19887
+- validation.jsonl:2477: duplicate input with train.jsonl:11917
+- validation.jsonl:2499: duplicate input with train.jsonl:8920
+- validation.jsonl:2585: duplicate input with train.jsonl:11627
+- validation.jsonl:2605: duplicate input with train.jsonl:19386
+- validation.jsonl:2734: duplicate input with train.jsonl:1140
+- validation.jsonl:2736: duplicate input with train.jsonl:21886
+- validation.jsonl:2744: duplicate input with train.jsonl:26512
+- validation.jsonl:2846: duplicate input with train.jsonl:11106
+- validation.jsonl:2919: duplicate input with train.jsonl:13814
+- validation.jsonl:2974: duplicate input with train.jsonl:1625
+- test.jsonl:259: duplicate input with train.jsonl:21679
+- test.jsonl:989: duplicate input with train.jsonl:6162
+- test.jsonl:1382: duplicate input with train.jsonl:13899
+- test.jsonl:1565: duplicate input with train.jsonl:18963
+- test.jsonl:1595: duplicate input with train.jsonl:5810
+- test.jsonl:1960: duplicate input with train.jsonl:4682
+- test.jsonl:2023: duplicate input with train.jsonl:18865
+- test.jsonl:2135: duplicate input with train.jsonl:5443
+- test.jsonl:2243: duplicate input with train.jsonl:1025
+- test.jsonl:2459: duplicate input with train.jsonl:9715
+- test.jsonl:2704: duplicate input with train.jsonl:12339
+- test.jsonl:2921: duplicate input with train.jsonl:9954
+- test.jsonl:2960: duplicate input with train.jsonl:23207
+- test.jsonl:3528: duplicate input with train.jsonl:8508
+- test.jsonl:3751: duplicate input with train.jsonl:16001
+- test.jsonl:3796: duplicate input with train.jsonl:11867
+- adversarial.jsonl:175: duplicate input with train.jsonl:11168
 
 STATS
 =====
 
 train.jsonl: 30000
-  intents: {'reminder.create': 5000, 'memory.store': 5000, 'calendar.update': 5000, 'task.complete': 5000, 'calendar.create': 5000, 'task.create': 5000}
+  intents: {'reminder.create': 5000, 'calendar.create': 5000, 'task.create': 5000, 'memory.store': 5000, 'calendar.update': 5000, 'task.complete': 5000}
 
 validation.jsonl: 3000
   intents: {'calendar.update': 500, 'memory.store': 500, 'task.create': 500, 'calendar.create': 500, 'reminder.create': 500, 'task.complete': 500}
